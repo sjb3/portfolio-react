@@ -67,13 +67,17 @@
 	
 	var _reactDom = __webpack_require__(/*! react-dom */ 34);
 	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
 	var _reactRouter = __webpack_require__(/*! react-router */ 172);
 	
 	var _Home = __webpack_require__(/*! ./components/Home */ 228);
 	
-	var _Root = __webpack_require__(/*! ./components/Root */ 229);
+	var _Root = __webpack_require__(/*! ./components/Root */ 230);
 	
-	var _About = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/About\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _About = __webpack_require__(/*! ./components/About */ 232);
+	
+	var _Main = __webpack_require__(/*! ./components/Main */ 233);
 	
 	function _interopRequireDefault(obj) {
 	  return obj && obj.__esModule ? obj : { default: obj };
@@ -96,6 +100,13 @@
 	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === 'undefined' ? 'undefined' : _typeof(superClass)));
 	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 	}
+	// import {StyleSheet, css} from 'aphrodite';
+	
+	
+	// const styles = {
+	//   background-image: url('../../img.jpg'),
+	//   size: cover
+	// }
 	
 	var App = function (_React$Component) {
 	  _inherits(App, _React$Component);
@@ -109,14 +120,15 @@
 	  _createClass(App, [{
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement(_reactRouter.Router, { history: _reactRouter.browserHistory }, _react2.default.createElement(_reactRouter.Route, { path: "/", component: _Root.Root }, _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home.Home }), '//setting as default', _react2.default.createElement(_reactRouter.Route, { path: "home", component: _Home.Home }), _react2.default.createElement(_reactRouter.Route, { path: "about", component: _About.About })));
+	
+	      return _react2.default.createElement(_reactRouter.Router, { history: _reactRouter.browserHistory }, _react2.default.createElement(_reactRouter.Route, { path: "/", component: _Root.Root }, _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home.Home }), '//setting as default', _react2.default.createElement(_reactRouter.Route, { path: "home", component: _Home.Home }), _react2.default.createElement(_reactRouter.Route, { path: "about", component: _About.About }), _react2.default.createElement(_reactRouter.Route, { path: "main", component: _Main.Main })));
 	    }
 	  }]);
 	
 	  return App;
 	}(_react2.default.Component);
 	
-	(0, _reactDom.render)(_react2.default.createElement(App, null), window.document.getElementById('app'));
+	_reactDom2.default.render(_react2.default.createElement(App, null), window.document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -27190,6 +27202,12 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactFontawesome = __webpack_require__(/*! react-fontawesome */ 229);
+	
+	var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
+	
+	var _reactRouter = __webpack_require__(/*! react-router */ 172);
+	
 	function _interopRequireDefault(obj) {
 	  return obj && obj.__esModule ? obj : { default: obj };
 	}
@@ -27222,9 +27240,20 @@
 	  }
 	
 	  _createClass(Home, [{
+	    key: 'toMainPg',
+	    value: function toMainPg() {
+	      _react2.default.createElement(_reactRouter.Router, { history: _reactRouter.browserHistory }, _react2.default.createElement(_reactRouter.Route, { path: "main", component: Main }));
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement('div', null, _react2.default.createElement('h3', null, 'Home'));
+	      return _react2.default.createElement('div', null, _react2.default.createElement(_reactFontawesome2.default, {
+	        name: 'eye',
+	        onCLick: this.toMainPg.bind(this),
+	        className: 'bigeye',
+	        size: '7x',
+	        style: { color: '0 1px 0 rgba(84, 255, 220, 0.9)' }
+	      }));
 	    }
 	  }]);
 	
@@ -27235,6 +27264,137 @@
 
 /***/ },
 /* 229 */
+/*!******************************************!*\
+  !*** ./~/react-fontawesome/lib/index.js ***!
+  \******************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.srOnlyStyle = undefined;
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+	
+	var srOnlyStyle = exports.srOnlyStyle = {
+	  position: 'absolute',
+	  width: '1px',
+	  height: '1px',
+	  padding: '0px',
+	  margin: '-1px',
+	  overflow: 'hidden',
+	  clip: 'rect(0px, 0px, 0px, 0px)',
+	  border: '0px'
+	};
+	
+	/**
+	 * A React component for the font-awesome icon library.
+	 *
+	 *
+	 * @param {String} [ariaLabel] An extra accessibility label to put on the icon
+	 * @param {Boolean} [border=false] Whether or not to show a border radius
+	 * @param {String} [className] An extra set of CSS classes to add to the component
+	 * @param {Object} [cssModule] Option to pass FontAwesome CSS as a module
+	 * @param {Boolean} [fixedWidth=false] Make buttons fixed width
+	 * @param {String} [flip=false] Flip the icon's orientation.
+	 * @param {Boolean} [inverse=false]Inverse the icon's color
+	 * @param {String} name Name of the icon to use
+	 * @param {Boolean} [pulse=false] Rotate icon with 8 steps (rather than smoothly)
+	 * @param {Number} [rotate] The degress to rotate the icon by
+	 * @param {String} [size] The icon scaling size
+	 * @param {Boolean} [spin=false] Spin the icon
+	 * @param {String} [stack] Stack an icon on top of another
+	 * @param {String} [tag=span] The HTML tag to use as a string (eg 'i' or 'em')
+	 * @module FontAwesome
+	 * @type {ReactClass}
+	 */
+	exports.default = _react2.default.createClass({
+	
+	  displayName: 'FontAwesome',
+	
+	  propTypes: {
+	    ariaLabel: _react2.default.PropTypes.string,
+	    border: _react2.default.PropTypes.bool,
+	    className: _react2.default.PropTypes.string,
+	    cssModule: _react2.default.PropTypes.object,
+	    fixedWidth: _react2.default.PropTypes.bool,
+	    flip: _react2.default.PropTypes.oneOf(['horizontal', 'vertical']),
+	    inverse: _react2.default.PropTypes.bool,
+	    name: _react2.default.PropTypes.string.isRequired,
+	    pulse: _react2.default.PropTypes.bool,
+	    rotate: _react2.default.PropTypes.oneOf([90, 180, 270]),
+	    size: _react2.default.PropTypes.oneOf(['lg', '2x', '3x', '4x', '5x']),
+	    spin: _react2.default.PropTypes.bool,
+	    stack: _react2.default.PropTypes.oneOf(['1x', '2x']),
+	    tag: _react2.default.PropTypes.string
+	  },
+	
+	  render: function render() {
+	    var _props = this.props;
+	    var border = _props.border;
+	    var cssModule = _props.cssModule;
+	    var className = _props.className;
+	    var fixedWidth = _props.fixedWidth;
+	    var flip = _props.flip;
+	    var inverse = _props.inverse;
+	    var name = _props.name;
+	    var pulse = _props.pulse;
+	    var rotate = _props.rotate;
+	    var size = _props.size;
+	    var spin = _props.spin;
+	    var stack = _props.stack;
+	    var _props$tag = _props.tag;
+	    var tag = _props$tag === undefined ? 'span' : _props$tag;
+	    var ariaLabel = _props.ariaLabel;
+	
+	    var props = _objectWithoutProperties(_props, ['border', 'cssModule', 'className', 'fixedWidth', 'flip', 'inverse', 'name', 'pulse', 'rotate', 'size', 'spin', 'stack', 'tag', 'ariaLabel']);
+	
+	    var classNames = [];
+	
+	    if (cssModule) {
+	      classNames.push(cssModule['fa']);
+	      classNames.push(cssModule['fa-' + name]);
+	      size && classNames.push(cssModule['fa-' + size]);
+	      spin && classNames.push(cssModule['fa-spin']);
+	      pulse && classNames.push(cssModule['fa-pulse']);
+	      border && classNames.push(cssModule['fa-border']);
+	      fixedWidth && classNames.push(cssModule['fa-fw']);
+	      inverse && classNames.push(cssModule['fa-inverse']);
+	      flip && classNames.push(cssModule['fa-flip-' + flip]);
+	      rotate && classNames.push(cssModule['fa-rotate-' + rotate]);
+	      stack && classNames.push(cssModule['fa-stack-' + stack]);
+	    } else {
+	      classNames.push('fa');
+	      classNames.push('fa-' + name);
+	      size && classNames.push('fa-' + size);
+	      spin && classNames.push('fa-spin');
+	      pulse && classNames.push('fa-pulse');
+	      border && classNames.push('fa-border');
+	      fixedWidth && classNames.push('fa-fw');
+	      inverse && classNames.push('fa-inverse');
+	      flip && classNames.push('fa-flip-' + flip);
+	      rotate && classNames.push('fa-rotate-' + rotate);
+	      stack && classNames.push('fa-stack-' + stack);
+	    }
+	
+	    // Add any custom class names at the end.
+	    className && classNames.push(className);
+	    return _react2.default.createElement(tag, _extends({}, props, { 'aria-hidden': true, className: classNames.join(' ') }), ariaLabel ? _react2.default.createElement('span', { style: srOnlyStyle }, ariaLabel) : null);
+	  }
+	});
+
+/***/ },
+/* 230 */
 /*!************************************!*\
   !*** ./src/app/components/Root.js ***!
   \************************************/
@@ -27263,7 +27423,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Header = __webpack_require__(/*! ./Header */ 230);
+	var _Header = __webpack_require__(/*! ./Header */ 231);
 	
 	function _interopRequireDefault(obj) {
 	  return obj && obj.__esModule ? obj : { default: obj };
@@ -27309,7 +27469,7 @@
 	;
 
 /***/ },
-/* 230 */
+/* 231 */
 /*!**************************************!*\
   !*** ./src/app/components/Header.js ***!
   \**************************************/
@@ -27334,8 +27494,154 @@
 	
 	//refactored to be stateless
 	var Header = exports.Header = function Header(props) {
-	  return _react2.default.createElement('nav', { className: 'navbar navbar-default' }, _react2.default.createElement('div', { className: 'container' }, _react2.default.createElement('div', { className: 'navbar-header' }, _react2.default.createElement('ul', { className: 'nav navbar-nav' }, _react2.default.createElement('li', null, _react2.default.createElement(_reactRouter.Link, { to: "/home", activeStyle: { color: "red" } }, 'Home'))))));
+	  return _react2.default.createElement('nav', { className: 'navbar navbar-default' }, _react2.default.createElement('div', { className: 'container' }, _react2.default.createElement('div', { className: 'navbar-header' }, _react2.default.createElement('ul', { className: 'nav navbar-nav' }, _react2.default.createElement('li', null, _react2.default.createElement(_reactRouter.Link, { to: "/home", activeStyle: { color: "red" } }, 'Home')), _react2.default.createElement('li', null, _react2.default.createElement(_reactRouter.Link, { to: "/about", activeStyle: { color: "red" } }, 'About')), _react2.default.createElement('li', null, _react2.default.createElement(_reactRouter.Link, { to: "/main", activeStyle: { color: "red" } }, 'Main'))))));
 	};
+
+/***/ },
+/* 232 */
+/*!*************************************!*\
+  !*** ./src/app/components/About.js ***!
+  \*************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.About = undefined;
+	
+	var _createClass = function () {
+	  function defineProperties(target, props) {
+	    for (var i = 0; i < props.length; i++) {
+	      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+	    }
+	  }return function (Constructor, protoProps, staticProps) {
+	    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
+	  };
+	}();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
+	
+	function _possibleConstructorReturn(self, call) {
+	  if (!self) {
+	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	}
+	
+	function _inherits(subClass, superClass) {
+	  if (typeof superClass !== "function" && superClass !== null) {
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	}
+	
+	var About = exports.About = function (_React$Component) {
+	  _inherits(About, _React$Component);
+	
+	  function About() {
+	    _classCallCheck(this, About);
+	
+	    return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+	  }
+	
+	  _createClass(About, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement('div', null, _react2.default.createElement('h1', null, 'Justin Byun'), _react2.default.createElement('h2', { className: 'title' }, _react2.default.createElement('em', null, 'Full-Stack Javascript Developer')), _react2.default.createElement('h3', { className: 'manifesto' }, _react2.default.createElement('em', null, "As a former Biotech Researcher, I learned the beauty of analytical skills and value of critical thinking: the artistry of science. Now, as a full-stack developer, I\u2019d like to add the artistry of science to programming to develop user-friendly, efficient and resource saving apps. ")), _react2.default.createElement('h2', null, 'Experiences'), _react2.default.createElement('h3', null, 'Per Diem ( University of Washington | Seattle WA, 07/13 - 04/16)'), _react2.default.createElement('ul', null, _react2.default.createElement('li', null, 'Electronics Processing Assistant: hard drive/data destruction'), _react2.default.createElement('li', null, 'Research assistant ( Make-A-Wish funded ): beverage consumption study in high schools in Washington State, surveyed students and participated in building protocol ')), _react2.default.createElement('h3', null, 'Research Scientist ( University of Washington-Biochemistry | Seattle WA: 07/07-06/13 )'), _react2.default.createElement('ul', null, _react2.default.createElement('li', null, 'Prep DNA samples and sequence them: optimize and trouble shooting reaction'), _react2.default.createElement('li', null, 'Monitoring accuracy and integrity of data produced and posting to the database'), _react2.default.createElement('li', null, 'Control sample flows and process to maximize the resource utilization'), _react2.default.createElement('li', null, 'Manage and maintain the lab and equipmen')), _react2.default.createElement('h3', null, 'Research Engineer ( University of Washington-Pharmacology, Howard Hughes Medical Institute | Seattle WA: 08/05-10/05 )'), _react2.default.createElement('ul', null, _react2.default.createElement('li', null, ' Investigate the roles of cell signaling molecules and pathways in cell growth and development'), _react2.default.createElement('li', null, 'Therapeutic goals and projections: understand and control tumorigenesis')), _react2.default.createElement('h2', null, 'Education'), _react2.default.createElement('h3', null, 'Code Fellows ( 2016, Seattle WA ) '), _react2.default.createElement('h4', null, 'Certificate in Advanced Full-Stack JavaScript Dev: Sept, 2016'), _react2.default.createElement('h3', null, 'University of Washington ( 2005, Seattle WA ) '), _react2.default.createElement('h4', null, "Bachelor\u2019s of Sciences: Majors in Biochemistry and Microbiology, Minor in Chemistry"), _react2.default.createElement('h2', null, 'Skill Sets'), _react2.default.createElement('h3', null, 'proficient skills;'), _react2.default.createElement('h4', null, 'javaScript, jQuery, nodeJS, expressJS, bluebirdJS, AngularJS, webpack, REST API, Mocha, gulpJS, HTML5, CSS3/SASS, SQL, noSQL(mongoDB)'));
+	    }
+	  }]);
+	
+	  return About;
+	}(_react2.default.Component);
+	
+	;
+
+/***/ },
+/* 233 */
+/*!************************************!*\
+  !*** ./src/app/components/Main.js ***!
+  \************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(/*! react-dom */ 34);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var CityRow = _react2.default.createClass({
+	  displayName: 'CityRow',
+	
+	  setTime: function setTime() {
+	    var currentdate = new Date();
+	    var hours = currentdate.getUTCHours() - 13 + parseInt(this.props.UTCOffset);
+	    // correct for number over 24, and negatives
+	    if (hours >= 24) {
+	      hours -= 24;
+	    }
+	    if (hours < 0) {
+	      hours += 12;
+	    }
+	    // add leading zero, first convert hours to string
+	    hours = hours + "";
+	    if (hours.length == 1) {
+	      hours = "0" + hours;
+	    }
+	
+	    // minutes are the same on every time zone
+	    var minutes = currentdate.getUTCMinutes();
+	    // add leading zero, first convert hours to string
+	    minutes = minutes + "";
+	    if (minutes.length == 1) {
+	      minutes = "0" + minutes;
+	    }
+	
+	    var seconds = currentdate.getUTCSeconds();
+	    seconds = seconds + "";
+	    console.log(hours, minutes, seconds);
+	
+	    this.setState({
+	      hours: hours,
+	      minutes: minutes,
+	      seconds: seconds
+	    });
+	  },
+	  componentWillMount: function componentWillMount() {
+	    this.setTime();
+	  },
+	  componentDidMount: function componentDidMount() {
+	    window.setInterval(function () {
+	      this.setTime();
+	    }.bind(this), 1000);
+	  },
+	  render: function render() {
+	    return _react2.default.createElement('div', { className: 'city-row', ref: 'cityRow' }, _react2.default.createElement('span', { className: 'city-time' }, this.state.hours, ':', this.state.minutes, ':', this.state.seconds));
+	  }
+	});
+	
+	_reactDom2.default.render(_react2.default.createElement(CityRow, { name: 'CityRow', UTCOffset: '5' }), document.getElementById('app'));
 
 /***/ }
 /******/ ]);
