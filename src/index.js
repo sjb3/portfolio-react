@@ -9,11 +9,12 @@ import './scss/lib/_theme.scss';
 
 render (
     <div>
-        <h1>
+        <h1 class="intro-main">
             Your Nav Bar
             <ul class="nav-ul">
-              <li>Resume</li>
-              <li>Contact</li>
+              <li><a></a></li>
+              <li><a href="./Resume.js">Resume</a></li>
+              <li><a href="./Contact.js">Contact</a></li>
             </ul>
         </h1>
     </div>,
