@@ -14,8 +14,8 @@ html, body {
   font-style: monospace;
 }
 
-body {
-  background-image: url('../assets/images/reflection.jpg');
+.body {
+  background-image: url('../src/img.jpg');
   background-size: cover;
   image-resolution: from-image;
 }
