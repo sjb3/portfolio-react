@@ -6,7 +6,7 @@ import { render } from 'react-dom';
 import '../scss/base.scss';
 import '../scss/lib/_theme.scss';
 
-export const Resume = React.createClass ({
+export class Resume extends React.Component {
   render() {
     return (
   <div class="resume-class">
@@ -21,4 +21,4 @@ export const Resume = React.createClass ({
   </div>
     )
   }
-});
+};

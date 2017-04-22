@@ -8,6 +8,8 @@ import './scss/base.scss';
 import './scss/lib/_theme.scss';
 // import './scss/vendor';
 
+window.React = React;
+
 render (
     /*<div>
         <h1 class="intro-main">
