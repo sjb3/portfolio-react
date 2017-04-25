@@ -3,10 +3,10 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Resume } from './Components/Resume';
+import { Contact } from './Components/Contact';
 
 import './scss/base.scss';
 import './scss/lib/_theme.scss';
-// import './scss/vendor';
 
 window.React = React;
 
@@ -21,6 +21,8 @@ render (
             </ul>
         </h1>
     </div>,*/
-    <Resume />,
+
+    // <Resume />,
+    <Contact />,
     document.getElementById('react-container')
 )

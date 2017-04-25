@@ -3,23 +3,27 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import './scss/base.scss';
-import './scss/lib/_theme.scss';
+import '../scss/base.scss';
+import '../scss/lib/_theme.scss';
 
-export default class Contact extends React.component {
-return (
-  <div>
-    <h2>contact information:</h2><br>
-     <!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
-     <h3><em>(206) 327-7850</em><h3>
-     <!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
-     <h3><em>klofseattle@hotmail.com</em></h3>
+import FaGithubAlt from 'react-icons/lib/fa/github-alt';
+import FaPhoneSquare from 'react-icons/lib/fa/phone-square';
+import FaPaperPlane from 'react-icons/lib/fa/paper-plane';
+import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square';
 
-     <a href="https://github.com/sjb3">
-     <h3><em>github.com/sjb3</h3></em></a>
+export class Contact extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>contact information:</h2>
+        <FaPhoneSquare />
+        <h3>206) 327-7850</h3>
+        <FaPaperPlane />
+        <h3>klofseattle@hotmail.com</h3>
+        <a href="github.com/sjb3"><FaGithubAlt /></a>
 
-     <a href="https://www.linkedin.com/in/justin-byun">
-     <h3><em>linkedin.com/in/justin-byun</h3></em></a>
-   </div>
- }
-)
+        <a href="linkedin.com/in/justin-byun"><FaLinkedinSquare /></a>
+      </div>
+      )
+  }
+};

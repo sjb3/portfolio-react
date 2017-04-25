@@ -20,11 +20,12 @@
     "node-sass": "^4.5.2",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",
-    "webpack": "^1.13.3",
+    "webpack": "^1.15.0",
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "react-icons": "^2.2.3"
   }
 }
