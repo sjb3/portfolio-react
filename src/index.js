@@ -22,7 +22,8 @@ render (
         </h1>
     </div>,*/
 
-    // <Resume />,
-    <Contact />,
+    <Resume />,
+    // <Contact />,
+    // <Gallery />,
     document.getElementById('react-container')
 )
