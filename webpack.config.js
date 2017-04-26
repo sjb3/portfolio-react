@@ -59,11 +59,11 @@ module.exports = {
       {
         test: /\.eot.*/,
       loader: 'url?limit=10000&mimetype=application/vnd.ms-fontobject&name=fonts/[name].[ext]',
-    },
-    {
-    test: /\.scss$/,
-    loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
-    }
+      },
+      {
+      test: /\.scss$/,
+      loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
+      }
     ]
   }
 }

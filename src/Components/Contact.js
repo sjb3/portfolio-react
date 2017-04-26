@@ -5,6 +5,7 @@ import { render } from 'react-dom';
 
 import '../scss/base.scss';
 import '../scss/lib/_theme.scss';
+import '../scss/icon.scss';
 
 import FaGithubAlt from 'react-icons/lib/fa/github-alt';
 import FaPhoneSquare from 'react-icons/lib/fa/phone-square';
