@@ -24,6 +24,5 @@ render (
 
     <Resume />,
     // <Contact />,
-    // <Gallery />,
     document.getElementById('react-container')
 )
