@@ -3,16 +3,24 @@
 @import './lib/_theme.scss';
 
 
-body, html {
-  width: 100%;
+body {
+  float: right;
+  width: 80%;
   height: 100%;
   font-family: monospace;
-  font-style: italic;
+  // font-style: italic;
   color: $app-main;
 
   background-image: url('../pic/versaille.jpg');
   background-size: cover;
-  opacity: 0.9;
+  image-resolution: from-image;
+}
+
+.resume-class {
+  background: rgba(27, 27, 27, 0.5);
+}
+.contact-class {
+  background: rgba(10, 45, 100, 0.3);
 }
 
 .intro-main {
@@ -26,3 +34,4 @@ body, html {
 .image-class {
   color: red;
 }
+

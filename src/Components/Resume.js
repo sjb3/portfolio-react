@@ -9,20 +9,26 @@ import '../scss/lib/_theme.scss';
 export class Resume extends React.Component {
   render() {
     return (
-      <div class="resume-class">
-
+      <div className="resume-class">
+        <hr />
+        <br />
+        <br />
+        <br />
         <h1 style={{color: 'white', textAlign: 'center', fontSize: 70, fontFamily: 'Ranga'}}>Justin Byun</h1>
+        <br />
         <h2 style={{textAlign: 'center', fontFamily: 'Ranga', fontSize: 50}}><em>Full-Stack Software Developer</em></h2>
-
-        <h3 style={{textAlign: 'center', color: '#f462f7', fontStyle: 'bold'}}><em>As a former Biotech Researcher, <br/>I learned the beauty of analytical skills and value of critical thinking: the artistry of science.
+        <br />
+        <h3 style={{textAlign: 'center', color: '#7a7aff', fontStyle: 'bold'}}><em>As a former Biotech Researcher, <br/>I learned the beauty of analytical skills and value of critical thinking: the artistry of science.
           Now, as a full-stack software developer, I’d like to add the artistry of science to programming to develop user-friendly, efficient and resource saving apps. </em></h3>
-
+        <br />
+        <br />
+        <br />
         <h2 style={{fontSize:40, fontFamily: 'Lobster', textAlign: 'left',}}>Experiences</h2>
           <hr />
-          <a className="github-link" href="http://heyduwamish.org"><h3 style={{color: 'yellow'}}>Open Source Contributor at heyduwamish.org</h3></a>
+          <a href="http://heyduwamish.org"><h3 style={{color: 'yellow'}}>Open Source Contributor at heyduwamish.org ( Seattle WA, 12/16 - current )</h3></a>
           <h4>: We are a community of residents and stakeholders monitoring pollution and improving environmental health for the Duwamish Valley.</h4>
           <h4>: Portrays the history of Duwamish river and proper over time and the environmental effects due to city development, and the users can log in and report and/or share the ideas</h4>
-          <h3 style={{color: 'yellow'}}>Teaching Assistant at CodeFellows</h3>
+          <h3 style={{color: 'yellow'}}>Teaching Assistant at CodeFellows ( Seattle WA, 01/17 - 02/17 )</h3>
           <h4>: Help students learning javaScript, HTML5 and CSS3</h4>
           <h3 style={{color: 'yellow'}}>Contract ( University of Washington | Seattle WA, 07/13 - 04/16)</h3>
           <h4>
@@ -48,20 +54,21 @@ export class Resume extends React.Component {
           <li>Therapeutic goals and projections: understand and control tumorigenesis</li><br/>
           </ul>
           </h4>
+          <br />
         <h2 style={{fontSize:40, fontFamily: 'Lobster', textAlign: 'left',}}>Education</h2>
         <hr />
           <h3 style={{color: 'yellow'}}>Code Fellows ( 2016, Seattle WA ) </h3><br/>
             <h4>Certificate in Advanced Full-Stack JavaScript Dev: Sept, 2016</h4><br/>
           <h3 style={{color: 'yellow'}}>University of Washington ( 2005, Seattle WA ) </h3><br/>
             <h4>Bachelor’s of Sciences: Majors in Biochemistry and Microbiology, Minor in Chemistry</h4><br/>
-
+        <br />
         <h2 style={{fontSize:40, fontFamily: 'Lobster', textAlign: 'left',}}>Skill Sets</h2>
         <hr />
           <h3 style={{color: 'yellow'}}>advanced skills;</h3>
-          <h4>javaScript, jQuery, nodeJS, expressJS, buebirdJS, Angular1, ReactJS, python, webPack, REST API, Mocha, GulpJS, HTML5, CSS3/SASS, SQL(SQLite, postgreSQL), noSQL(mongoDB, RethinkDB)</h4>
+          <h4>javaScript, jQuery, nodeJS, expressJS, buebirdJS, Angular 1, ReactJS, python, webPack, RESTful API, Mocha, GulpJS, HTML5, CSS3/SASS, SQL(SQLite, postgreSQL), noSQL(mongoDB, RethinkDB)</h4>
           <h3 style={{color: 'yellow'}}>intermediate;</h3>
           <h4>R, AWS(web dev-assoc), Docker(ver 1.12), java, goLang</h4>
-
+        <br />
         <h2 style={{fontSize:40, fontFamily: 'Lobster', textAlign: 'left',}}>Completed Group Projects</h2>
           <hr />
           <a style={{color: '#f41685'}} href="http://github.com/sjb3/brew-buddy-coffee-companion"><h3>_brewBuddy_coffeeCompanion ( Sept 2016 )</h3></a>
@@ -81,6 +88,9 @@ export class Resume extends React.Component {
             <li>Created with songKick and mapBox API’s with leafletJS</li>
           </ul>
           </h4>
+          <br />
+          <br />
+          <hr />
       </div>
     )
   }

@@ -2,8 +2,11 @@
 
 import React from 'react';
 import { render } from 'react-dom';
+// import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+
 import { Resume } from './Components/Resume';
 import { Contact } from './Components/Contact';
+import { App } from './Components/App';
 
 import './scss/base.scss';
 import './scss/lib/_theme.scss';
@@ -21,8 +24,14 @@ render (
             </ul>
         </h1>
     </div>,*/
-
     <Resume />,
     // <Contact />,
+    /*<Router history={browserHistory}>
+        <Route path="/" component={Resume}>
+        <IndexRoute component={Resume} />
+        <Route path="resume" component={Resume} />
+        <Route path="contact" component={Contact} />
+        </Route>
+    </Router>,*/
     document.getElementById('react-container')
 )
