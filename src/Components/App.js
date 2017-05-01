@@ -6,31 +6,31 @@ import { Nav } from './Nav';
 import { Contact } from './Contact';
 import { Resume } from './Resume';
 
-/*export class App extends React.Component {
+export class App extends React.Component {
   render () {
     return (
-      <div className="App">
-        <Router>
-          <Route path="/" component={App}>
-            <Route path="Resume" component={Resume} />
-            <Route path="Contact" component={Contact} />
-          </Route>
-        </Router>
+      <div className="app">
+        {(this.props.location.pathname === "/contact") ?
+          <Contact /> :
+        (this.props.location.pathname === "/resume") ?
+          <Resume /> :
+        <Resume />
+        }
       </div>
     )
   }
-}*/
+}
 
-export class App extends React.Component {
+/*export class App extends React.Component {
   render () {
     return (
       <div className="app-class">
         <ul>
           <li>Resume</li>
           <li>Contact</li>
+          <li>NotFound404</li>
         </ul>
-        {this.props.children}
       </div>
     )
   }
-}
+}*/

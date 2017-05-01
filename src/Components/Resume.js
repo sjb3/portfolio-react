@@ -1,12 +1,12 @@
 'use strict';
 
-import React from 'react';
+import { Component } from 'react';
 import { render } from 'react-dom';
 
 import '../scss/base.scss';
 import '../scss/lib/_theme.scss';
 
-export class Resume extends React.Component {
+export class Resume extends Component {
   render() {
     return (
       <div className="resume-class">

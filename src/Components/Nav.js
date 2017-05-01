@@ -1,9 +1,9 @@
 'use strict';
 
-import React from 'react';
+import { Component } from 'react';
 import { Link } from 'react-router';
 
-export class Nav extends React.Component {
+export class Nav extends Component {
   render() {
     return (
       <nav className="nav">
