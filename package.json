@@ -28,8 +28,10 @@
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-icons": "^2.2.3",
+    "react-motion": "^0.5.0",
     "react-router": "^3.0.0",
     "react-waypoint": "^6.0.0",
+    "react-zoomy": "^1.1.1",
     "sha1": "^1.1.1",
     "styled-components": "^1.4.4",
     "superagent": "^3.5.2"

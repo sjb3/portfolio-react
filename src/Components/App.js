@@ -6,6 +6,8 @@ import { Contact } from './Contact';
 import { Resume } from './Resume';
 import { Menu } from './Menu';
 import { Home } from './Home/Home';
+import { Projects } from './Projects/Projects';
+
 
 export class App extends React.Component {
   render () {
@@ -18,6 +20,8 @@ export class App extends React.Component {
           <Resume /> :
         (this.props.location.pathname === "/home") ?
           <Home /> :
+        (this.props.location.pathname === "/projects") ?
+          <Projects /> :
         <Home />
         }
       </div>
