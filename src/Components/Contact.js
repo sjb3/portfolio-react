@@ -19,7 +19,7 @@ export class Contact extends Component {
         <br />
         <br />
         <br />
-        <h2 style={{textAlignLast: 'center', fontFamily: 'Ranga', color: 'white', fontSize: 40, textAlign: 'left'}}>contact information:</h2>
+        <h2 style={{textAlignLast: 'center', fontFamily: 'Ranga', color: 'white', fontSize: 50, textAlign: 'left'}}>contact information:</h2>
         <br />
         <br />
         <hr/>

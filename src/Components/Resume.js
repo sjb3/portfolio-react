@@ -10,11 +10,13 @@ export class Resume extends Component {
   render() {
     return (
       <div className="resume-class">
-        <hr />
+        <br />
+        <br />
         <br />
         <br />
         <br />
         <h1 style={{color: 'white', textAlign: 'center', fontSize: 70, fontFamily: 'Ranga'}}>Justin Byun</h1>
+        <br />
         <br />
         <h2 style={{textAlign: 'center', fontFamily: 'Ranga', fontSize: 50}}><em>Full-Stack Software Developer</em></h2>
         <br />

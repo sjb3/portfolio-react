@@ -20,21 +20,42 @@ body {
   background: rgba(27, 27, 27, 0.5);
 }
 .contact-class {
-  background: rgba(10, 45, 100, 0.3);
+  background: rgba(10, 45, 200, 0.3);
 }
 .not-found {
   background: rgba(27, 2, 2, 0.6);
 }
+// .home-class {
+//   background: rgba(0, 0, 0, 1);
+// }
 
-.intro-main {
-  font-size: 38px;
+// .intro-main {
+//   font-size: 38px;
+// }
+
+// .nav-ul {
+//     font-color: red;
+// }
+
+// .image-class {
+//   color: red;
+// }
+
+nav.menu {
+  // background: rgba(241, 237, 249, 0.7);
+  background: rgba(0, 0, 9, 0.7);
+
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  width: calc(100% - 1em);
+  font-size: 0.1em;
+  padding: 10em;
+  display: flex;
+  justify-content: space-around;
+
+  a {
+    color: #f4007a;
+  }
 }
-
-.nav-ul {
-    font-color: red;
-}
-
-.image-class {
-  color: red;
-}
-
