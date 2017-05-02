@@ -8,8 +8,7 @@ import { Resume } from './Components/Resume';
 import { Contact } from './Components/Contact';
 import { App } from './Components/App';
 import { NotFound404 } from './Components/NotFound404';
-import { Home } from './Components/Home';
-// import { Contact } from './Components/Gallery';
+import { Home } from './Components/Home/Home';
 
 import './scss/base.scss';
 import './scss/lib/_theme.scss';

@@ -5,7 +5,7 @@ import { Router, Switch, Route, Link, browserHistory, IndexRoute } from 'react-r
 import { Contact } from './Contact';
 import { Resume } from './Resume';
 import { Menu } from './Menu';
-import { Home } from './Home';
+import { Home } from './Home/Home';
 
 export class App extends React.Component {
   render () {
