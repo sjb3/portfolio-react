@@ -8,8 +8,9 @@ import { Resume } from './Components/Resume';
 import { Contact } from './Components/Contact';
 import { App } from './Components/App';
 import { NotFound404 } from './Components/NotFound404';
-import { Home } from './Components/Home';
-// import { Contact } from './Components/Gallery';
+import { Home } from './Components/Home/Home';
+import { Projects } from './Components/Projects/Projects';
+
 
 import './scss/base.scss';
 import './scss/lib/_theme.scss';
@@ -22,6 +23,7 @@ render (
         <Route path="resume" component={App} />
         <Route path="contact" component={App} />
         <Route path="home" component={App} />
+        <Route path="projects" component={App} />
         <Route path="*" component={NotFound404} />
     </Router>,
     document.getElementById('react-container')

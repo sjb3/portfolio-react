@@ -40,6 +40,10 @@ module.exports = {
         test: /\.html$/,
         loader: 'html',
       },
+        {
+        test: /\.html$/,
+        loader: 'html-loader?attrs[]=video:src',
+      },
       {
         test: /\.(jpg|gif|png)$/,
         loader: 'file?name=img/[hash].[ext]',
