@@ -5,7 +5,7 @@ export const ImageButton = styled.div`
   overflow: hidden;
   display: inline-block;
   & > img {
-    transition: transform .3s;
+    transition: transform .4s;
   }
   &:hover {
     & > img {

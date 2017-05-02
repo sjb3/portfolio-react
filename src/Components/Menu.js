@@ -10,15 +10,22 @@ export const Menu = () => (
   <nav className='menu'>
     <Link to="/home" activeClassName="selected">
       <TiHomeOutline style={{fontSize: 30}}/>
+      {/*<h3 style={{fontFamily: 'VT323', fontSize: 25}}>home</h3>*/}
+
     </Link>
     <Link to="/resume" activeClassName="selected">
       <MdFingerprint style={{fontSize: 30}}/>
+      {/*<h3 style={{fontFamily: 'VT323', fontSize: 25}}>resume</h3>*/}
     </Link>
     <Link to="/contact" activeClassName="selected">
       <MdRingVolume style={{fontSize: 30}}/>
+      {/*<h3 style={{fontFamily: 'VT323', fontSize: 25}}>contact</h3>*/}
+
     </Link>
     <Link to="/projects" activeClassName="selected">
       <FaSearch style={{fontSize: 30}}/>
+      {/*<h3 style={{fontSize: 30}}>projects</h3>*/}
+
     </Link>
   </nav>
 )

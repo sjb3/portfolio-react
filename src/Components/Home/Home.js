@@ -1,7 +1,9 @@
 'use strict';
 
 import React, { Component, PropTypes } from 'react';
-// import styled from 'styled-components';
+import styled from 'styled-components';
+import ReactPlayer from 'react-player';
+
 import { RevealP, Container } from './Home.style';
 import { WhenInView } from '../WhenInView/WhenInView';
 
@@ -22,9 +24,18 @@ export class Home extends Component {
         <br />
         <br />
 
-        <video id='background-video' loop autoPlay>
+        {/*<video id='background-video' loop autoPlay>
           <source src='../../media/noir.mp4' type='video/mp4' />
-        </video>
+        </video>*/}
+        <ReactPlayer url='https://www.youtube.com/watch?v=YZudtHH-MFw'
+                     playing
+                     volume='0'
+                     loop='true'
+                     width='full'
+                     style={{opacity: 0.8}}
+                     playbackRate='0.4'
+                     />
+
         <br />
         <br />
         <br />
