@@ -6,7 +6,8 @@ import '../../scss/base.scss';
 import '../../scss/lib/_theme.scss';
 
 export const NotFoundBackground = styled.div`
-  position: fixed;
+  position: absolute;
+
   width: 100%;
   height: 100%;
   background-image: url(${require('../../pic/404.jpg')});

@@ -14,34 +14,24 @@ export class Home extends Component {
   render() {
     return (
       <Container>
-        <video id='background-video' loop autoPlay>
-          <source src='../../media/noir.mp4' type='video/mp4' />
-        </video>
-
-        <h1 style={{marginTop: 400, marginTop: 200, float: 'center', color:'#718df2', fontSize: 130, fontFamily: 'Bungee Inline', fontStyle: 'italic'}}>H O M E</h1>
-        <br />
-        <br />
-        <br />
-        <br />
-
-        <video id='background-video' loop autoPlay>
-          <source src='../../media/noir.mp4' type='video/mp4' />
-        </video>
-        {/*<ReactPlayer url={'../../media/noir.mp4'} />*/}
-        {/*<ReactPlayer url='https://www.youtube.com/watch?v=YZudtHH-MFw'
+        <ReactPlayer url='https://www.youtube.com/watch?v=YZudtHH-MFw'
                      playing
                      volume='0'
                      loop='true'
-                     width='100%'
-                     height='100%'
+                     width='100vw'
+                     height='100vh'
                      style={{opacity: 0.8}}
-                     playbackRate='0.4'
-                     />*/}
+                     playbackRate='0.4'>
+
+        </ReactPlayer>
 
         <br />
         <br />
         <br />
+        <h1 style={{marginTop: 400, marginTop: 200, float: 'center', color:'#718df2', fontSize: 130, fontFamily: 'Bungee Inline', fontStyle: 'italic'}}>H O M E</h1>
+
         <br />
+
         <WhenInView>
           {({ isInView }) =>
           <RevealP hide={!isInView} style={{fontSize: 20, fontSize: 30, fontFamily: 'Nothing You Could Do'}}>
