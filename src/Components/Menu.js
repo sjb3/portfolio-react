@@ -6,6 +6,9 @@ import TiHomeOutline from 'react-icons/lib/ti/home-outline';
 import MdFingerprint from 'react-icons/lib/md/fingerprint';
 import FaSearch from 'react-icons/lib/fa/search';
 
+import '../scss/base.scss';
+import '../scss/lib/_theme.scss';
+
 export const Menu = () => (
   <nav className='menu'>
     <Link to="/home" activeClassName="selected">

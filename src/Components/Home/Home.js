@@ -24,17 +24,19 @@ export class Home extends Component {
         <br />
         <br />
 
-        {/*<video id='background-video' loop autoPlay>
+        <video id='background-video' loop autoPlay>
           <source src='../../media/noir.mp4' type='video/mp4' />
-        </video>*/}
-        <ReactPlayer url='https://www.youtube.com/watch?v=YZudtHH-MFw'
+        </video>
+        {/*<ReactPlayer url={'../../media/noir.mp4'} />*/}
+        {/*<ReactPlayer url='https://www.youtube.com/watch?v=YZudtHH-MFw'
                      playing
                      volume='0'
                      loop='true'
-                     width='full'
+                     width='100%'
+                     height='100%'
                      style={{opacity: 0.8}}
                      playbackRate='0.4'
-                     />
+                     />*/}
 
         <br />
         <br />
@@ -51,7 +53,8 @@ export class Home extends Component {
         </RevealP>
           }
         </WhenInView>
-                <WhenInView>
+
+        <WhenInView>
           {({ isInView }) =>
           <RevealP hide={!isInView} style={{fontSize: 20, fontSize: 30, fontFamily: 'Nothing You Could Do'}}>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
@@ -62,7 +65,8 @@ export class Home extends Component {
         </RevealP>
           }
         </WhenInView>
-                <WhenInView>
+
+        <WhenInView>
           {({ isInView }) =>
           <RevealP hide={!isInView} style={{fontSize: 20, fontSize: 30, fontFamily: 'Nothing You Could Do'}}>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
