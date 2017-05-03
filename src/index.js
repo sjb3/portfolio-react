@@ -7,8 +7,8 @@ import { Router, Route, hashHistory } from 'react-router';
 import { Resume } from './Components/Resume';
 import { Contact } from './Components/Contact';
 import { App } from './Components/App';
-import { NotFound404 } from './Components/NotFound404';
-import { Home } from './Components/Home/Home';
+import { NotFound404 } from './Components/NotFound404/NotFound404';
+import { Home } from './Components/Home/Home.js';
 import { Projects } from './Components/Projects/Projects';
 
 

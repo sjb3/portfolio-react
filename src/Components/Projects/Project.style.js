@@ -1,4 +1,7 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+import '../../scss/base.scss';
+import '../../scss/lib/_theme.scss';
 
 export const ImageButton = styled.div`
   cursor: pointer;
@@ -13,3 +16,19 @@ export const ImageButton = styled.div`
     }
   }
 `;
+
+export const Flex = styled.div`
+  display: flex;
+
+    ${({ column }) => column && css `
+    flex-direction: column;
+  `}
+
+  ${({ justify }) => justify && css `
+    justify-content: $(justify);
+  `}
+
+  ${({ align  }) => align  && css `
+    align-content: $(align);
+  `}
+`

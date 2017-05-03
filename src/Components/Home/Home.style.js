@@ -1,6 +1,9 @@
 'use strict';
 
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
+
+import '../../scss/base.scss';
+import '../../scss/lib/_theme.scss';
 
 // export const Image = styled.img`
 //   width: 100%;
@@ -28,16 +31,16 @@ import styled, {css} from 'styled-components';
 //   }
 // `;
 
-export const NoirBalletMov = styled.div `
-  height: 1--vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-`
+// export const NoirBalletMov = styled.div `
+//   height: 1--vh;
+//   background-size: cover;
+//   background-position: center;
+//   display: flex;
+//   flex-direction: column;
+//   align-content: center;
+//   justify-content: center;
+//   text-align: center;
+// `
 
 export const RevealP = styled.p`
   position: relative;
