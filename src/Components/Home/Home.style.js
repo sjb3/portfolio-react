@@ -67,7 +67,7 @@ export const RevealP = styled.p`
 `;
 
 export const Container = styled.div `
-  padding-left: 120px;
-  padding-right: 120px;
-  padding-top: 30px
+  padding-left: 60px;
+  // padding-right: 60px;
+  padding-top: 59px
 `;
