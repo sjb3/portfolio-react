@@ -5,6 +5,9 @@ import { Component } from 'react';
 // import fetch from 'isomorphic-fetch';
 import { Gallery } from './Gallery';
 
+import '../../scss/base.scss';
+import '../../scss/lib/_theme.scss';
+
 export class GalleryList extends Component {
 
   constructor(props) {
@@ -14,17 +17,67 @@ export class GalleryList extends Component {
         {
           name: 'kawa01',
           desc: 'Rei Kawakubo',
-          image: 'http://artflyer.net/wp-content/uploads/2017/01/Rei-Kawakubo.jpg'
+          image: require('../../pic/kawakubo/kawa01.jpg')
         },
         {
           name: 'kawa02',
           desc: 'Rei Kawakubo',
-          image: 'http://www.hausderkunst.de/uploads/pics/HdK_Rei-Kawakubo-Comme-des-Garcons-540.jpg'
+          image: require('../../pic/kawakubo/kawa02.jpg')
         },
         {
           name: 'kawa03',
           desc: 'Rei Kawakubo',
-          image: 'http://1.bp.blogspot.com/-V9YehA06wsA/TZDP_tr4hNI/AAAAAAAAB_c/YBqLyvusiAQ/s1600/tumblr_lhdg60mF9N1qgrlpao1_500.jpg'
+          image: require('../../pic/kawakubo/kawa03.jpg')
+        },
+        {
+          name: 'kawa04',
+          desc: 'Rei Kawakubo',
+          image: require('../../pic/kawakubo/kawa04.jpg')
+        },
+        {
+          name: 'kawa05',
+          desc: 'Rei Kawakubo',
+          image: require('../../pic/kawakubo/kawa05.jpg')
+        },
+        {
+          name: 'kawa06',
+          desc: 'Rei Kawakubo',
+          image: require('../../pic/kawakubo/kawa06.jpg')
+        },
+        {
+          name: 'kawa07',
+          desc: 'Rei Kawakubo',
+          image: require('../../pic/kawakubo/kawa07.jpg')
+        },
+        {
+          name: 'kawa08',
+          desc: 'Rei Kawakubo',
+          image: require('../../pic/kawakubo/kawa08.jpg')
+        },
+        {
+          name: 'kawa09',
+          desc: 'Rei Kawakubo',
+          image: require('../../pic/kawakubo/kawa09.jpg')
+        },
+        {
+          name: 'kawa10',
+          desc: 'Rei Kawakubo',
+          image: require('../../pic/kawakubo/kawa10.jpg')
+        },
+        {
+          name: 'kawa11',
+          desc: 'Rei Kawakubo',
+          image: require('../../pic/kawakubo/kawa11.jpg')
+        },
+        {
+          name: 'kawa12',
+          desc: 'Rei Kawakubo',
+          image: require('../../pic/kawakubo/kawa12.jpg')
+        },
+        {
+          name: 'kawa13',
+          desc: 'Rei Kawakubo',
+          image: require('../../pic/kawakubo/kawa13.jpg')
         }
       ]
     }
@@ -35,7 +88,7 @@ export class GalleryList extends Component {
 
     return (
       <div className='gallery-list-class'>
-        <h1>Celebrating Rei Kawakubo's Met Museum Exhibition!</h1>
+        <h1 style={{float: 'center', color: '#E8053B', fontSize: 50, fontFamily: 'Nothing You Could Do', marginTop: 100}}>Celebrating Rei Kawakubo's Met Museum Exhibition!</h1>
           { gallerys.map(
             (data, i) =>
               <Gallery key={i} {...data} />
