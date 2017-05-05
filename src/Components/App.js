@@ -7,7 +7,7 @@ import { Resume } from './Resume';
 import { Menu } from './Menu';
 import { Home } from './Home/Home';
 import { Projects } from './Projects/Projects';
-
+import { GalleryList } from './Gallery/GalleryList';
 
 export class App extends React.Component {
   render () {
@@ -22,6 +22,8 @@ export class App extends React.Component {
           <Home /> :
         (this.props.location.pathname === "/projects") ?
           <Projects /> :
+        (this.props.location.pathname === "/gallery-list") ?
+          <GalleryList /> :
         <Home />
         }
       </div>

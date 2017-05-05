@@ -14,24 +14,25 @@ export class Home extends Component {
   render() {
     return (
       <Container>
-        <ReactPlayer url='https://www.youtube.com/watch?v=YZudtHH-MFw'
-                     playing
-                     volume='0'
-                     loop='true'
-                     width='100vw'
-                     height='100vh'
-                     style={{opacity: 0.8}}
-                     playbackRate='0.4'>
 
+      <ReactPlayer url={require('../../media/noir.mp4')}
+                   playing
+                   volume='0'
+                   loop='true'
+                   width='100vw'
+                   height='100vh'
+                   playbackRate='0.4'
+                   >
         </ReactPlayer>
 
         <br />
         <br />
         <br />
-        <h1 style={{marginTop: 400, marginTop: 200, float: 'center', color:'#718df2', fontSize: 130, fontFamily: 'Bungee Inline', fontStyle: 'italic'}}>H O M E</h1>
+        <h1 style={{marginTop: 400, marginTop: 200, float: 'center', color:'black', opacity: 0.7, fontSize: 130, fontFamily: 'Bungee Inline', fontStyle: 'italic'}}>H O M E</h1>
 
         <br />
-
+        <hr />
+        <br />
         <WhenInView>
           {({ isInView }) =>
           <RevealP hide={!isInView} style={{fontSize: 20, fontSize: 30, fontFamily: 'Nothing You Could Do'}}>
