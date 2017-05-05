@@ -40,6 +40,10 @@ module.exports = {
         test: /\.html$/,
         loader: 'html',
       },
+      {
+        test: /\.mp4$/,
+        loader: 'url?limit=10000&mimetype=video/mp4',
+      },
         {
         test: /\.html$/,
         loader: 'html-loader?attrs[]=video:src',

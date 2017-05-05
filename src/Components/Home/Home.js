@@ -14,22 +14,15 @@ export class Home extends Component {
   render() {
     return (
       <Container>
-        <ReactPlayer url='https://www.youtube.com/watch?v=YZudtHH-MFw'
-                     playing
-                     volume='0'
-                     loop='true'
-                     width='100vw'
-                     height='100vh'
-                     style={{opacity: 0.8}}
-                     playbackRate='0.4'>
-      {/*<ReactPlayer url={require('../../media/noir.mp4')}
-                     playing
-                     volume='0'
-                     loop='true'
-                     width='100vw'
-                     height='100vh'
-                     style={{opacity: 0.8}}
-                     playbackRate='0.4'>*/}
+
+      <ReactPlayer url={require('../../media/noir.mp4')}
+                   playing
+                   volume='0'
+                   loop='true'
+                   width='100vw'
+                   height='100vh'
+                   playbackRate='0.4'
+                   >
         </ReactPlayer>
 
         <br />
