@@ -10,7 +10,7 @@ import { App } from './Components/App';
 import { NotFound404 } from './Components/NotFound404/NotFound404';
 import { Home } from './Components/Home/Home.js';
 import { Projects } from './Components/Projects/Projects';
-
+import { GalleryList } from './Components/Gallery/GalleryList';
 
 import './scss/base.scss';
 import './scss/lib/_theme.scss';
@@ -24,7 +24,9 @@ render (
         <Route path="contact" component={App} />
         <Route path="home" component={App} />
         <Route path="projects" component={App} />
+        <Route path="gallery-list" component={App} />
         <Route path="*" component={NotFound404} />
     </Router>,
+    // <GalleryList />,
     document.getElementById('react-container')
 )
