@@ -32,3 +32,7 @@ export const Flex = styled.div`
     align-content: $(align);
   `}
 `
+
+export const ImageContainer = styled.div`
+  width: 1000px;
+`;

@@ -2,16 +2,40 @@
 
 import React, { Component } from 'react';
 import Zoomy from 'react-zoomy';
-import { ImageButton, Flex } from './Project.style';
-import { Container } from '../Home/Home.style';
+import ParallaxImage from 'react-image-parallax2';
 
+import { ImageButton, Flex, ImageContainer } from './Project.style';
+import { Container } from '../Home/Home.style';
 
 export class Projects extends Component {
   render() {
     return (
       <Container>
+
+        <div marginBottom="100px">
+          <index>
+            <h1 style={{ marginTop: 100, fontSize: '80', fontFamily: 'VT323'}}>Parallax2</h1>
+          </index>
+          <ImageContainer>
+            <ParallaxImage
+              reduceHeight={1/2}
+              src={require('../../pic/mcqueen.jpg')}
+            >
+
+            </ParallaxImage>
+          </ImageContainer>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        </div>
         <h1 style={{ marginTop: 100, fontSize: '80', fontFamily: 'VT323'}} >Zoomy Projects</h1>
         <br />
+
         <Flex justify={'center'}>
           <Zoomy
             imageUrl={require('./../../pic/mc07.jpg')}
@@ -30,6 +54,8 @@ export class Projects extends Component {
             }}
             />
         </Flex>
+
+
       </Container>
     )
   }
