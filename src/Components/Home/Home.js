@@ -17,7 +17,6 @@ export class Home extends Component {
 
       <ReactPlayer url={require('../../media/noir.mp4')}
                    playing
-                   volume='0'
                    loop='true'
                    width='100vw'
                    height='100vh'
