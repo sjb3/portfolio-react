@@ -22,6 +22,9 @@ export const NotFound404 = () => (
     {/*<img src={require('../pic/404.jpg')}
          style={{height: '100%', width:'100%'}}
     />*/}
-
+    <br />
+    <br />
+    <br />
+    <br />
   </div>
 )

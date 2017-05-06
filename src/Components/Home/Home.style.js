@@ -70,4 +70,14 @@ export const Container = styled.div `
   padding-left: 60px;
   // padding-right: 60px;
   padding-top: 59px
+
 `;
+
+export const SpecialSpan = styled.div`
+  display: inline-block;
+`
+
+export const SpecialSpanFather = styled.div`
+  display: inline-block;
+  overflow: hidden;
+`
