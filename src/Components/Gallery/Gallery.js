@@ -15,7 +15,6 @@ export class Gallery extends Component {
           <a style={{color: '#33FF99'}}>{ name }</a>
         </h3>
         <p>{ desc }</p>
-
         <img src={ image } />
         <hr />
       </div>

@@ -7,10 +7,13 @@ import ParallaxImage from 'react-image-parallax2';
 import { ImageButton, Flex, ImageContainer } from './Project.style';
 import { Container } from '../Home/Home.style';
 
+import '../../scss/base.scss';
+import '../../scss/lib/_theme.scss';
+
 export class Projects extends Component {
   render() {
     return (
-      <Container>
+      <Container className='projects-container'>
 
         <div marginBottom="100px">
           <index>
