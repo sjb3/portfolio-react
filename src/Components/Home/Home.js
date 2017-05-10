@@ -19,15 +19,24 @@ export class Home extends Component {
 
   render() {
     return (
-      <Container className='home-class'>
 
-        <ReactPlayer url={require('../../media/noir.mp4')}
-                   playing
-                   loop='true'
-                   width='100vw'
-                   height='100vh'
-                   playbackRate='0.4'
-                   >
+      <Container className='home-class'>
+        {/*<ReactPlayer url={require('../../media/noir.mp4')}
+        //            playing
+        //            loop='true'
+        //            width='100vw'
+        //            height='100vh'
+        //            playbackRate='0.4'
+          >
+        </ReactPlayer>*/}
+
+        <ReactPlayer url="https://www.youtube.com/watch?v=XjMpbTpA6sY&list=LLvFckbZ8kvvHFIrdBYiYjeQ&index=5"
+                     playing
+                     loop='true'
+                     width='100vw'
+                     height='100vh'
+                     volumne='mute'
+                     playbackRate='0.4'>
         </ReactPlayer>
 
         <br />
