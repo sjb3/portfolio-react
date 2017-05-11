@@ -2,6 +2,9 @@
 
 var webpack = require('webpack');
 
+// const DashboardPlugin = require('webpack-dashboard/plugin')
+// const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
   entry: './src/index.js',
   output: {

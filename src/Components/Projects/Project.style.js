@@ -3,6 +3,21 @@ import styled, { css } from 'styled-components';
 import '../../scss/base.scss';
 import '../../scss/lib/_theme.scss';
 
+export const Div = styled.div`
+  ${({ marginBottom }) => marginBottomm && css`
+    margin-bottom: ${marginBottom};
+    `}
+  ${({ marginTop }) => marginTop && css`
+  margin-top: ${marginTop};
+  `}
+  ${({ marginLeft }) => marginLeftm && css`
+    margin-left: ${marginLefl};
+  l`}
+  ${({ marginRight }) => marginRightm && css`
+    margin-right: ${marginRight};
+    `}
+`
+
 export const ImageButton = styled.div`
   cursor: pointer;
   overflow: hidden;
@@ -35,4 +50,6 @@ export const Flex = styled.div`
 
 export const ImageContainer = styled.div`
   width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 `;
