@@ -4,7 +4,8 @@
   "description": "portfolio-react",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --inline --hot"
+    "start": "./node_modules/.bin/webpack-dev-server --inline --hot",
+    "watch": "./node_modules/.bin/webpack-dashboard -- webpack-dev-server --inline --hot"
   },
   "author": "Justin",
   "license": "MIT",
@@ -20,6 +21,7 @@
     "file-loader": "^0.11.1",
     "json-loader": "^0.5.4",
     "node-sass": "^4.5.2",
+    "normalize.css": "^7.0.0",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",
     "webpack": "^1.15.0",

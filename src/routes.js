@@ -15,7 +15,7 @@ import { GalleryList } from './Components/Gallery/GalleryList';
 import './scss/base.scss';
 import './scss/lib/_theme.scss';
 
-  const routes = (
+const routes = (
       <Router history={hashHistory}>
           <Route path="/" component={App} />
           <Route path="resume" component={App} />

@@ -21,16 +21,19 @@ export class Home extends Component {
     return (
 
       <Container className='home-class'>
-        {/*<ReactPlayer url={require('../../media/noir.mp4')}
-        //            playing
-        //            loop='true'
-        //            width='100vw'
-        //            height='100vh'
-        //            playbackRate='0.4'
-          >
+        {/*<ReactPlayer
+                    controls
+                    url={require('../../media/noir.mp4')}
+                    playing
+                    loop='true'
+                    width='100vw'
+                    height='100vh'
+                    playbackRate='0.4'>
         </ReactPlayer>*/}
 
-        <ReactPlayer url="https://www.youtube.com/watch?v=XjMpbTpA6sY&list=LLvFckbZ8kvvHFIrdBYiYjeQ&index=5"
+        <ReactPlayer
+                     controls
+                     url="https://www.youtube.com/watch?v=YZudtHH-MFw"
                      playing
                      loop='true'
                      width='100vw'

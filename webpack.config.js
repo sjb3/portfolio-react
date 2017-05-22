@@ -2,8 +2,8 @@
 
 var webpack = require('webpack');
 
-// const DashboardPlugin = require('webpack-dashboard/plugin')
-// const HtmlWebpackPlugin = require('html-webpack-plugin')
+const DashboardPlugin = require('webpack-dashboard/plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
@@ -69,14 +69,17 @@ module.exports = {
       },
       {
         test: /\.eot.*/,
-      loader: 'url?limit=10000&mimetype=application/vnd.ms-fontobject&name=fonts/[name].[ext]',
+        loader: 'url?limit=10000&mimetype=application/vnd.ms-fontobject&name=fonts/[name].[ext]',
       },
       {
-      test: /\.scss$/,
-      loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
+        test: /\.scss$/,
+        loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
       }
     ]
-  }
+  },
+  plugins: [
+    new DashboardPlugin()
+  ]
 }
 
 
