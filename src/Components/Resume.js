@@ -5,6 +5,7 @@ import { render } from 'react-dom';
 
 import '../scss/base.scss';
 import '../scss/lib/_theme.scss';
+import 'normalize.css';
 
 export class Resume extends Component {
   render() {
